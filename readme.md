@@ -11,8 +11,8 @@ This webpage includes a form that collects input of a number from a user. When t
 ## Specifications:
 
 _Spec: The program returns a range of numbers from 0 to the users inputted number._
-* _Example input: 3_
-* _Example output: 0, 1, 2, 3_
+* _Example input: 4_
+* _Example output: 0, 1, 2, 3, 4_
 
 _Spec: The program replaces the number 3 with "I'm sorry, Dave. I'm afraid I can't do that."_
 * _Example input: 3_
