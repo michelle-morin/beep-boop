@@ -6,7 +6,7 @@
 
 ## Description
 
-This webpage includes a form that collects input of a number from a user. When the user submits the form, the webpage outputs a list of numbers. The list of numbers includes the following exceptions, ordered from least to most important. For numbers in the list that contain a 1, all digits are replaced with "Beep!" For numbers that contain a 2, all digits are replaced with "Boop!" For numbers that contain a 3, all digits are replaced with "I'm sorry, Dave. I'm afraid I can't do that." This webpage is an exercise in HTML, CSS, JavaScript, and jQuery. The webpage is styled using Bootstrap and custom CSS.
+This webpage includes a form that collects input of a number from a user, and optionally the user's name. When the user submits the form, the webpage outputs a list of numbers. The list of numbers includes the following exceptions, ordered from least to most important. For numbers in the list that contain a 1, all digits are replaced with "Beep!" For numbers that contain a 2, all digits are replaced with "Boop!" For numbers that contain a 3, all digits are replaced with "I'm sorry, [name]. I'm afraid I can't do that." When the user does not enter their name, the [name] defaults to "Dave". This webpage is an exercise in HTML, CSS, JavaScript, and jQuery. The webpage is styled using Bootstrap and custom CSS.
 
 ## Specifications:
 
