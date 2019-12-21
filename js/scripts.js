@@ -1,31 +1,27 @@
 // Back-end logic: none.
 
-
 // User interface logic:
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     $(".output").show();
 
-    var inputNumber = $("input#number").val();
-    console.log(inputNumber);
+    var inputNumber = parseInt($("input#number").val());
 
     var listOfNumbers = [];
-      for (var i = 0; i <= parseInt(inputNumber); i ++) {
+      for (var i = 0; i <= inputNumber; i ++) {
         listOfNumbers.push(i);
       }
-    console.log(listOfNumbers);
 
-    listOfNumbers.toString().forEach(function(number) {
-      if (number.indexOf('3') > -1) {
-        number = "I'm sorry, Dave. I can't do that.";
-      } else if (number.indexOf('2') > -1) {
-        number = "Boop!";
-      } else if (number.indexOf('1') > -1) {
-        number = "Beep!";
+    for (var i = 0; i <= inputNumber; i++) {
+      if (i.toString().includes("3")) {
+        listOfNumbers[i] = "I'm sorry, Dave. I can't do that.";
+      } else if (i.toString().includes("2")) {
+        listOfNumbers[i] = "Boop!";
+      } else if (i.toString().includes("1")) {
+        listOfNumbers[i] = "Beep!";
       }
-    });
-
+    }
 
     listOfNumbers.forEach(function(element) {
       $("ul#result").append("<li>" + element + "</li>");
