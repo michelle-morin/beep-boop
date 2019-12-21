@@ -36,6 +36,7 @@ $(document).ready(function() {
     }
 
     $("ul#result").empty();
+    $(".inputnumber").text(inputNumber)
 
     listOfNumbers.forEach(function(element) {
       $("ul#result").append("<li>" + element + "</li>");
