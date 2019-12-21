@@ -8,6 +8,10 @@ $(document).ready(function() {
 
     var inputNumber = parseInt($("input#number").val());
 
+    if (isNaN(inputNumber) === true) {
+      $("ul#result").text("Please enter a number.")
+    }
+
     var listOfNumbers = [];
       for (var i = 0; i <= inputNumber; i ++) {
         listOfNumbers.push(i);
