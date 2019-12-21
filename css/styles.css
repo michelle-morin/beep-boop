@@ -3,11 +3,18 @@
 }
 
 .jumbotron {
-  background-color: ;
-  color: ;
+  background-color: #022f36;
+  color: white;
 }
 
 .card {
-  background-color: ;
-  color: ;
+  background-color: #cdd3d4;
+  color: #022f36;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+.btn {
+  background-color: white;
+  width: 100%
 }

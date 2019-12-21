@@ -4,7 +4,7 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    $(".output").show();
+    $(".output").addClass("card").show();
 
     var inputNumber = parseInt($("input#number").val());
 
