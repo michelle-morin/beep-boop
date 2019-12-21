@@ -12,6 +12,14 @@ $(document).ready(function() {
       $("ul#result").text("Please enter a number.")
     }
 
+    var userName = $("input#name").val();
+      if (userName) {
+        return userName;
+      } else {
+        userName = "Dave";
+      }
+    console.log(userName);
+
     var listOfNumbers = [];
       for (var i = 0; i <= inputNumber; i ++) {
         listOfNumbers.push(i);
@@ -19,13 +27,15 @@ $(document).ready(function() {
 
     for (var i = 0; i <= inputNumber; i++) {
       if (i.toString().includes("3")) {
-        listOfNumbers[i] = "I'm sorry, Dave. I can't do that.";
+        listOfNumbers[i] = "I'm sorry, " + userName + ". I can't do that.";
       } else if (i.toString().includes("2")) {
         listOfNumbers[i] = "Boop!";
       } else if (i.toString().includes("1")) {
         listOfNumbers[i] = "Beep!";
       }
     }
+
+    $("ul#result").empty();
 
     listOfNumbers.forEach(function(element) {
       $("ul#result").append("<li>" + element + "</li>");
