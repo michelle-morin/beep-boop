@@ -11,12 +11,24 @@ $(document).ready(function() {
     console.log(inputNumber);
 
     var listOfNumbers = [];
-      for (var i = 0; i <= inputNumber; i ++) {
+      for (var i = 0; i <= parseInt(inputNumber); i ++) {
         listOfNumbers.push(i);
         console.log(listOfNumbers);
       }
 
-    $("ul#result").append("<li>" +  + "</li>")  // add numbers
+    listOfNumbers.forEach(function(number) {
+      if (number.indexOf('3') > -1) {
+        number = "I'm sorry, Dave. I can't do that.";
+      } else if (number.indexOf('2') > -1) {
+        number = "Boop!";
+      } else if (number.indexOf('1') > -1) {
+        number = "Beep!";
+      }
+    });
 
+
+    listOfNumbers.forEach(function(number) {
+      $("ul#result").append("<li>" + number + "</li>");
+    })
   });
 });
