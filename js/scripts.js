@@ -8,17 +8,17 @@ $(document).ready(function() {
 
     var inputNumber = parseInt($("input#number").val());
 
-    if (isNaN(inputNumber) === true) {
-      $("ul#result").text("Please enter a number.")
-    }
-
     var userName = $("input#name").val();
       if (userName) {
-        return userName;
+        userName = userName;
       } else {
         userName = "Dave";
       }
     console.log(userName);
+
+    if (isNaN(inputNumber) === true) {
+      $("ul#result").text("Please enter a number.")
+    }
 
     var listOfNumbers = [];
       for (var i = 0; i <= inputNumber; i ++) {
